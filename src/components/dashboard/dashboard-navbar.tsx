@@ -22,10 +22,10 @@ export function DashboardNavbar() {
           <Button variant="ghost" className="text-white/70 hover:text-white">
             Insights
           </Button>
-          <Button className="rounded-xl bg-cyan-400 text-black hover:bg-cyan-300">
+          {/* <Button className="rounded-xl bg-cyan-400 text-black hover:bg-cyan-300">
             <Sparkles className="mr-2 h-4 w-4" />
             AI Actions
-          </Button>
+          </Button> */}
         </div>
       </div>
     </header>
