@@ -1,5 +1,5 @@
 import { Star, GitFork } from "lucide-react";
-import type { DeveloperProfile } from "@/src/lib/mock-user";
+import type { DeveloperProfile } from "@/lib/mock-user";
 
 type RepositoryTableProps = {
   developer: DeveloperProfile;
@@ -14,7 +14,7 @@ export function RepositoryTable({ developer }: RepositoryTableProps) {
       </div>
 
       <div className="overflow-x-auto">
-        <table className="w-full min-w-[720px] border-separate border-spacing-y-3">
+        <table className="w-full min-w-180 border-separate border-spacing-y-3">
           <thead>
             <tr className="text-left text-sm text-white/40">
               <th className="pb-2 font-medium">Repository</th>

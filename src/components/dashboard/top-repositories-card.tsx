@@ -1,5 +1,5 @@
 import { Star, GitFork, ArrowUpRight } from "lucide-react";
-import type { DeveloperProfile } from "@/src/lib/mock-user";
+import type { DeveloperProfile } from "@/lib/mock-user";
 
 type TopRepositoriesCardProps = {
   developer: DeveloperProfile;
@@ -28,7 +28,6 @@ export function TopRepositoriesCard({ developer }: TopRepositoriesCardProps) {
                 <p className="font-medium text-white">{repo.name}</p>
                 <p className="mt-1 text-sm text-white/50">{repo.description}</p>
               </div>
-              <ArrowUpRight className="h-4 w-4 text-white/40" />
             </div>
 
             <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-white/60">

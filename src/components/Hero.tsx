@@ -1,18 +1,26 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Globe, ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { useState } from "react";
+import { Globe, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { extractGitHubUsername } from "../utils/helpers";
+import { useRouter } from "next/navigation";
 
 export function Hero() {
-  const [username, setUsername] = useState("")
+  const [userInput, setUserInput] = useState("");
+  const router = useRouter();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (username.trim()) {
-      console.log("Analyzing:", username)
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      const userName = extractGitHubUsername(userInput);
+      if (!userName) return;
+      router.push(`/users/${userName}`);
+    } catch (error) {
+      console.error("Navigation error:", error);
     }
-  }
+  };
 
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-16">
@@ -26,7 +34,9 @@ export function Hero() {
         {/* Badge */}
         <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-card/80 px-5 py-2 backdrop-blur-sm">
           <span className="h-2 w-2 rounded-full bg-neon-cyan shadow-[0_0_8px_2px] shadow-neon-cyan/50" />
-          <span className="text-sm font-medium text-muted-foreground">Developer Analytics Platform</span>
+          <span className="text-sm font-medium text-muted-foreground">
+            Developer Analytics Platform
+          </span>
         </div>
 
         {/* Gradient lines under badge */}
@@ -45,7 +55,8 @@ export function Hero() {
         {/* Description */}
         <p className="mx-auto mb-10 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
           Gain deep insights into any GitHub profile. Track repositories,
-          analyze language usage, and discover developer patterns with powerful analytics.
+          analyze language usage, and discover developer patterns with powerful
+          analytics.
         </p>
 
         {/* Search Form */}
@@ -57,14 +68,14 @@ export function Hero() {
               </div>
               <input
                 type="text"
-                placeholder="Enter GitHub username..."
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                placeholder="Enter GitHub username or Link ..."
+                value={userInput}
+                onChange={(e) => setUserInput(e.target.value)}
                 className="h-14 flex-1 bg-transparent px-4 text-foreground placeholder:text-muted-foreground/60 focus:outline-none"
               />
               <div className="pr-2">
-                <Button 
-                  type="submit" 
+                <Button
+                  type="submit"
                   className="h-10 gap-2 rounded-lg bg-card px-5 text-foreground hover:bg-muted"
                 >
                   Analyze Developer
@@ -81,5 +92,5 @@ export function Hero() {
         </p>
       </div>
     </section>
-  )
+  );
 }

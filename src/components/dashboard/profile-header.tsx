@@ -1,6 +1,7 @@
 import { ExternalLink, Users, FolderGit2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import type { DeveloperProfile } from "@/src/lib/mock-user";
+import type { DeveloperProfile } from "@/lib/mock-user";
+import Image from "next/image";
 
 type ProfileHeaderProps = {
   developer: DeveloperProfile;
@@ -11,9 +12,11 @@ export function ProfileHeader({ developer }: ProfileHeaderProps) {
     <section className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_0_40px_rgba(34,211,238,0.06)] backdrop-blur-xl">
       <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
         <div className="flex gap-4">
-          <img
+          <Image
             src={developer.avatarUrl}
             alt={developer.name}
+            height={80}
+            width={80}
             className="h-20 w-20 rounded-2xl border border-white/10 object-cover"
           />
 

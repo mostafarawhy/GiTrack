@@ -1,7 +1,7 @@
 "use client";
 
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
-import type { DeveloperProfile } from "@/src/lib/mock-user";
+import type { DeveloperProfile } from "@/lib/mock-user";
 
 type LanguageDistributionCardProps = {
   developer: DeveloperProfile;
