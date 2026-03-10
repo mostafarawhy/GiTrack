@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { Globe, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { extractGitHubUsername } from "../utils/helpers";
+import { DashboardPreview } from "@/components/dashboard-preview";
+import { extractGitHubUsername } from "@/utils/helpers";
 import { useRouter } from "next/navigation";
 
 export function Hero() {
@@ -50,6 +51,7 @@ export function Hero() {
           Analyze GitHub
           <br />
           <span className="text-neon-cyan">Developer Activity</span>
+          <p className="text-3xl">With AI analyze availble</p>
         </h1>
 
         {/* Description */}
@@ -90,6 +92,8 @@ export function Hero() {
         <p className="mt-6 text-sm text-muted-foreground">
           Free to use. No account required.
         </p>
+
+        <DashboardPreview />
       </div>
     </section>
   );

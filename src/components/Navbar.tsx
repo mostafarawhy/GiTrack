@@ -14,27 +14,6 @@ export function Navbar() {
             GitTrack
           </span>
         </Link>
-
-        <nav className="flex items-center gap-6">
-          <Link
-            href="#features"
-            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-          >
-            Features
-          </Link>
-          <Link
-            href="#dashboard"
-            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-          >
-            Dashboard
-          </Link>
-          <Button
-            size="sm"
-            className="bg-neon-cyan text-primary-foreground hover:bg-neon-cyan/90"
-          >
-            Get Started
-          </Button>
-        </nav>
       </div>
     </header>
   );

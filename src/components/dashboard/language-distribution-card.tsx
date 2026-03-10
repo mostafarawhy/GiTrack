@@ -1,7 +1,7 @@
 "use client";
 
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
 import type { DeveloperProfile } from "@/lib/map-github-user";
+import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 
 type LanguageDistributionCardProps = {
   developer: DeveloperProfile;

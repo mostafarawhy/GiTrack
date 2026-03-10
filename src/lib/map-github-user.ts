@@ -1,4 +1,4 @@
-import type { GitHubRepo, GitHubUser } from "@/src/lib/github";
+import type { GitHubRepo, GitHubUser } from "@/lib/github";
 
 export type Repository = {
   id: number;

@@ -1,5 +1,3 @@
-import { DashboardPreview } from "../components/dashboard-preview";
-import { Features } from "../components/features";
 import { Hero } from "../components/hero";
 import { Navbar } from "../components/navbar";
 
@@ -9,8 +7,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Features />
-        <DashboardPreview />
       </main>
     </div>
   );
