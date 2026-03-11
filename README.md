@@ -121,8 +121,6 @@ The interface was designed as a modern developer tool using:
 
 ---
 
-# Project Architecture
-
 ## Project Architecture
 
 src
@@ -172,6 +170,9 @@ src
 │
 └─ utils
    └─ helpers.ts
+
+
+
 
 # How It Works
 
