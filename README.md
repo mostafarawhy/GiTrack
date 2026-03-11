@@ -122,11 +122,6 @@ The interface was designed as a modern developer tool using:
 ---
 
 ## Project Architecture
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 7d41ca4 (final tweaks edits)
 ```text
 src
 ├─ app
@@ -171,11 +166,6 @@ src
 └─ utils
    └─ helpers.ts
 ```
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 7d41ca4 (final tweaks edits)
 
 # How It Works
 

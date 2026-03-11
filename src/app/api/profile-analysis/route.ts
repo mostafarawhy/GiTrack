@@ -19,7 +19,7 @@ export async function POST(req: Request) {
 Analyze this GitHub developer profile.
 
 Rules:
-- important the the summary must be atleaset 70 words but not mor that 90 words 
+- important that the summary evaluates the technical skills of the developer and insights must be atleaset 70 words but not more that 90 words 
 - Summary must be strong and illustrative.
 - Each list must contain exactly 3 items.
 - Each item (not the summary) must be short: maximum 12 words.
@@ -28,7 +28,7 @@ Rules:
 - Do not invent facts not supported by the data.
 - Do not include markdown.
 - Do not include labels inside the strings.
-    
+
 Return ONLY valid JSON in this exact format:
 
 {
