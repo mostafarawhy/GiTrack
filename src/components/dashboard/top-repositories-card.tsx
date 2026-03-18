@@ -1,5 +1,5 @@
 import { Star, GitFork } from "lucide-react";
-import type { DeveloperProfile } from "@/lib/mock-user";
+import type { DeveloperProfile } from "@/lib/map-github-user";
 
 type TopRepositoriesCardProps = {
   developer: DeveloperProfile;

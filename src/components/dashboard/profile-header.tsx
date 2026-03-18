@@ -1,6 +1,6 @@
 import { ExternalLink, Users, FolderGit2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import type { DeveloperProfile } from "@/lib/mock-user";
+import type { DeveloperProfile } from "@/lib/map-github-user";
 import Image from "next/image";
 
 type ProfileHeaderProps = {

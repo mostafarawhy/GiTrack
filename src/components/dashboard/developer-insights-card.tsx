@@ -1,5 +1,5 @@
 import { Sparkles } from "lucide-react";
-import type { DeveloperProfile } from "@/lib/mock-user";
+import type { DeveloperProfile } from "@/lib/map-github-user";
 
 type DeveloperInsightsCardProps = {
   developer: DeveloperProfile;

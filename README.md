@@ -160,7 +160,6 @@ src
 ├─ lib
 │  ├─ github.ts
 │  ├─ map-github-user.ts
-│  ├─ mock-user.ts
 │  ├─ profile-analysis.ts
 │  └─ utils.ts
 └─ utils

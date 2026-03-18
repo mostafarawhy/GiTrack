@@ -1,6 +1,6 @@
 import { LanguageDistributionCard } from "./language-distribution-card";
 import { TopRepositoriesCard } from "./top-repositories-card";
-import type { DeveloperProfile } from "@/lib/mock-user";
+import type { DeveloperProfile } from "@/lib/map-github-user";
 
 type AnalyticsGridProps = {
   developer: DeveloperProfile;

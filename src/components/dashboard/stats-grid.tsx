@@ -1,6 +1,6 @@
 import { FolderKanban, Star, GitFork, Code2 } from "lucide-react";
 import { StatCard } from "@/components/dashboard/stat-card";
-import type { DeveloperProfile } from "@/lib/mock-user";
+import type { DeveloperProfile } from "@/lib/map-github-user";
 
 type StatsGridProps = {
   developer: DeveloperProfile;
